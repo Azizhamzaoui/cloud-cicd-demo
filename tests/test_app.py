@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append("/home/runner/work/cloud-cicd-demo/cloud-cicd-demo")
+
 from app import app
 
 

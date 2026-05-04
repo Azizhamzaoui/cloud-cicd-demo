@@ -36,3 +36,5 @@ jobs:
 
       - name: build docker image
         run: docker build -t cloud-cicd-demo:${{ github.sha }} .
+
+      
