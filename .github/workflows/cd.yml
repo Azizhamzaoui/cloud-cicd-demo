@@ -31,6 +31,10 @@ jobs:
       - name: Build verification
         run: python -m py_compile app.py
 
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
+
+
       - name: Run tests
         run: pytest
 
